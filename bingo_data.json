@@ -1,0 +1,761 @@
+{
+    "sesion_id": "cb99d253-87fc-4c77-89c4-c87969dac51c",
+    "ronda_actual": 8,
+    "precio_carton": 5.0,
+    "porc_linea": 30,
+    "porc_bingo": 60,
+    "porc_casa": 10,
+    "jugadores_activos": {
+        "Nani": [
+            {
+                "id": "34500",
+                "numeros": [
+                    2,
+                    6,
+                    7,
+                    10,
+                    20,
+                    31,
+                    32,
+                    34,
+                    54,
+                    58,
+                    62,
+                    71,
+                    72,
+                    77,
+                    88
+                ]
+            },
+            {
+                "id": "39323",
+                "numeros": [
+                    12,
+                    15,
+                    20,
+                    27,
+                    28,
+                    32,
+                    37,
+                    38,
+                    50,
+                    52,
+                    64,
+                    80,
+                    81,
+                    87,
+                    89
+                ]
+            }
+        ],
+        "El español leo": [
+            {
+                "id": "28944",
+                "numeros": [
+                    7,
+                    15,
+                    23,
+                    24,
+                    25,
+                    40,
+                    41,
+                    45,
+                    46,
+                    55,
+                    64,
+                    69,
+                    83,
+                    86,
+                    88
+                ]
+            },
+            {
+                "id": "43887",
+                "numeros": [
+                    4,
+                    6,
+                    15,
+                    18,
+                    20,
+                    37,
+                    41,
+                    49,
+                    57,
+                    59,
+                    61,
+                    66,
+                    78,
+                    80,
+                    83
+                ]
+            }
+        ],
+        "Tia Cheli": [
+            {
+                "id": "42800",
+                "numeros": [
+                    4,
+                    10,
+                    20,
+                    21,
+                    30,
+                    35,
+                    38,
+                    48,
+                    55,
+                    58,
+                    65,
+                    77,
+                    79,
+                    85,
+                    87
+                ]
+            },
+            {
+                "id": "36787",
+                "numeros": [
+                    5,
+                    7,
+                    9,
+                    15,
+                    16,
+                    41,
+                    43,
+                    52,
+                    56,
+                    60,
+                    62,
+                    66,
+                    71,
+                    73,
+                    80
+                ]
+            }
+        ],
+        "Rossana": [
+            {
+                "id": "63884",
+                "numeros": [
+                    10,
+                    14,
+                    22,
+                    27,
+                    28,
+                    40,
+                    43,
+                    54,
+                    56,
+                    58,
+                    63,
+                    67,
+                    75,
+                    79,
+                    88
+                ]
+            },
+            {
+                "id": "62238",
+                "numeros": [
+                    11,
+                    13,
+                    19,
+                    22,
+                    23,
+                    33,
+                    36,
+                    42,
+                    43,
+                    50,
+                    64,
+                    65,
+                    84,
+                    85,
+                    86
+                ]
+            }
+        ],
+        "Leorelis": [
+            {
+                "id": "17605",
+                "numeros": [
+                    1,
+                    3,
+                    9,
+                    11,
+                    19,
+                    40,
+                    43,
+                    49,
+                    52,
+                    56,
+                    63,
+                    65,
+                    66,
+                    70,
+                    87
+                ]
+            },
+            {
+                "id": "26204",
+                "numeros": [
+                    3,
+                    5,
+                    21,
+                    26,
+                    28,
+                    40,
+                    43,
+                    49,
+                    53,
+                    57,
+                    61,
+                    63,
+                    70,
+                    81,
+                    82
+                ]
+            }
+        ],
+        "Toro": [
+            {
+                "id": "96356",
+                "numeros": [
+                    2,
+                    6,
+                    9,
+                    11,
+                    24,
+                    35,
+                    36,
+                    46,
+                    54,
+                    55,
+                    62,
+                    72,
+                    73,
+                    79,
+                    83
+                ]
+            },
+            {
+                "id": "70739",
+                "numeros": [
+                    6,
+                    11,
+                    13,
+                    15,
+                    19,
+                    35,
+                    41,
+                    46,
+                    54,
+                    56,
+                    66,
+                    69,
+                    79,
+                    82,
+                    90
+                ]
+            }
+        ]
+    },
+    "jugadores_historicos": {
+        "Nani": [
+            {
+                "id": "19688",
+                "numeros": [
+                    4,
+                    7,
+                    15,
+                    20,
+                    29,
+                    32,
+                    41,
+                    45,
+                    53,
+                    55,
+                    71,
+                    76,
+                    77,
+                    86,
+                    88
+                ]
+            },
+            {
+                "id": "77987",
+                "numeros": [
+                    5,
+                    7,
+                    22,
+                    24,
+                    27,
+                    31,
+                    32,
+                    35,
+                    37,
+                    46,
+                    67,
+                    70,
+                    75,
+                    76,
+                    78
+                ]
+            }
+        ],
+        "El español leo": [
+            {
+                "id": "11769",
+                "numeros": [
+                    13,
+                    14,
+                    17,
+                    23,
+                    24,
+                    38,
+                    43,
+                    51,
+                    53,
+                    55,
+                    67,
+                    74,
+                    83,
+                    86,
+                    87
+                ]
+            },
+            {
+                "id": "63665",
+                "numeros": [
+                    3,
+                    9,
+                    12,
+                    24,
+                    26,
+                    33,
+                    34,
+                    38,
+                    53,
+                    57,
+                    66,
+                    69,
+                    72,
+                    79,
+                    81
+                ]
+            }
+        ],
+        "Tia Cheli": [
+            {
+                "id": "15636",
+                "numeros": [
+                    2,
+                    4,
+                    11,
+                    18,
+                    24,
+                    35,
+                    36,
+                    39,
+                    46,
+                    53,
+                    63,
+                    67,
+                    72,
+                    82,
+                    90
+                ]
+            },
+            {
+                "id": "30254",
+                "numeros": [
+                    5,
+                    11,
+                    12,
+                    20,
+                    30,
+                    34,
+                    35,
+                    37,
+                    39,
+                    54,
+                    70,
+                    71,
+                    72,
+                    77,
+                    79
+                ]
+            }
+        ],
+        "Rossana": [
+            {
+                "id": "86175",
+                "numeros": [
+                    4,
+                    9,
+                    17,
+                    25,
+                    26,
+                    33,
+                    48,
+                    52,
+                    53,
+                    55,
+                    64,
+                    66,
+                    74,
+                    87,
+                    90
+                ]
+            },
+            {
+                "id": "60026",
+                "numeros": [
+                    15,
+                    20,
+                    24,
+                    28,
+                    30,
+                    34,
+                    36,
+                    37,
+                    41,
+                    45,
+                    66,
+                    79,
+                    81,
+                    88,
+                    90
+                ]
+            }
+        ],
+        "Leorelis": [
+            {
+                "id": "46340",
+                "numeros": [
+                    5,
+                    12,
+                    14,
+                    20,
+                    28,
+                    33,
+                    42,
+                    44,
+                    52,
+                    56,
+                    62,
+                    74,
+                    76,
+                    82,
+                    86
+                ]
+            },
+            {
+                "id": "28743",
+                "numeros": [
+                    10,
+                    17,
+                    18,
+                    22,
+                    23,
+                    36,
+                    44,
+                    53,
+                    57,
+                    60,
+                    62,
+                    71,
+                    82,
+                    85,
+                    87
+                ]
+            }
+        ],
+        "Toro": [
+            {
+                "id": "96356",
+                "numeros": [
+                    2,
+                    6,
+                    9,
+                    11,
+                    24,
+                    35,
+                    36,
+                    46,
+                    54,
+                    55,
+                    62,
+                    72,
+                    73,
+                    79,
+                    83
+                ]
+            },
+            {
+                "id": "70739",
+                "numeros": [
+                    6,
+                    11,
+                    13,
+                    15,
+                    19,
+                    35,
+                    41,
+                    46,
+                    54,
+                    56,
+                    66,
+                    69,
+                    79,
+                    82,
+                    90
+                ]
+            }
+        ]
+    },
+    "saldos": {
+        "Nani": 65.0,
+        "El español leo": 170.0,
+        "Tia Cheli": 65.0,
+        "Rossana": 86.0,
+        "Leorelis": 80.0,
+        "Toro": 90.0
+    },
+    "saldo_casa": 81.0,
+    "chat": [
+        {
+            "u": "ADMIN",
+            "m": "Vamos por la segunda..."
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de Leorelis (Cartón 46340)"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Yeiii"
+        },
+        {
+            "u": "Rossana",
+            "m": "Eso prima"
+        },
+        {
+            "u": "Leorelis",
+            "m": "🤩"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de Tia Cheli (Cartón 30254)"
+        },
+        {
+            "u": "Tia Cheli",
+            "m": "Buenísimo !!!!..."
+        },
+        {
+            "u": "ADMIN",
+            "m": "Anja, sigue Barcelona ardiendo....jejej"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Whaaat 🤔"
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de Tia Cheli (Cartón 45074)"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de El español leo (Cartón 79650)"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Epa que paso"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Ah oka"
+        },
+        {
+            "u": "ADMIN",
+            "m": "por fin...."
+        },
+        {
+            "u": "El español leo",
+            "m": "Vamos a por ello, jeje"
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de El español leo (Cartón 75091)"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Epa epa "
+        },
+        {
+            "u": "Leorelis",
+            "m": "Jejeje"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de El español leo (Cartón 75091)"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Otra vez! Jajaja que paso ahi"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Mis cartones tambien juegan! "
+        },
+        {
+            "u": "El español leo",
+            "m": "buenooo, es que el que hace la linea lleva chance, pero bueno, Nani fue pal baño"
+        },
+        {
+            "u": "Leorelis",
+            "m": "Jajaja"
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de Leorelis (Cartón 54785)"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de El español leo (Cartón 92698)"
+        },
+        {
+            "u": "ADMIN",
+            "m": "vayaaaa.... otro en casa"
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de Leorelis (Cartón 62120)"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de Rossana (Cartón 98729)"
+        },
+        {
+            "u": "ADMIN",
+            "m": "esoooo Rosanna de nuevo..."
+        },
+        {
+            "u": "Leorelis",
+            "m": "Eso primaaa 🥳🥳"
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de Nani (Cartón 14893)"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de El español leo (Cartón 18083)"
+        },
+        {
+            "u": "ADMIN",
+            "m": "versiale, vamos a ver...esto esta muy seguido, jejej"
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de Leorelis (Cartón 27633)"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de Nani (Cartón 18223)"
+        },
+        {
+            "u": "ADMIN",
+            "m": "epaleeee, esto esta quedando en alicante..."
+        },
+        {
+            "u": "ADMIN",
+            "m": "vamos al ocho, que luego se reparten los premios..."
+        },
+        {
+            "u": "Leorelis",
+            "m": "Jejeje"
+        },
+        {
+            "u": "📢 SISTEMA",
+            "m": "¡LÍNEA! de El español leo (Cartón 43887)"
+        },
+        {
+            "u": "🏆 SISTEMA",
+            "m": "¡BINGO! de Rossana (Cartón 62238)"
+        },
+        {
+            "u": "ADMIN",
+            "m": "tio Toro entro ya en la ultima mano..."
+        },
+        {
+            "u": "ADMIN",
+            "m": "ya pagando a tia chely 3000 BWD, confirmar el pago"
+        }
+    ],
+    "historial_8_rondas": [
+        {
+            "l_n": "Leorelis",
+            "l_id": "46340",
+            "l_p": 15.0,
+            "b_n": "Tia Cheli",
+            "b_id": "30254",
+            "b_p": 30.0
+        },
+        {
+            "l_n": "Tia Cheli",
+            "l_id": "45074",
+            "l_p": 15.0,
+            "b_n": "El español leo",
+            "b_id": "79650",
+            "b_p": 30.0
+        },
+        {
+            "l_n": "El español leo",
+            "l_id": "75091",
+            "l_p": 15.0,
+            "b_n": "El español leo",
+            "b_id": "75091",
+            "b_p": 30.0
+        },
+        {
+            "l_n": "Leorelis",
+            "l_id": "54785",
+            "l_p": 15.0,
+            "b_n": "El español leo",
+            "b_id": "92698",
+            "b_p": 30.0
+        },
+        {
+            "l_n": "Leorelis",
+            "l_id": "62120",
+            "l_p": 15.0,
+            "b_n": "Rossana",
+            "b_id": "98729",
+            "b_p": 30.0
+        },
+        {
+            "l_n": "Nani",
+            "l_id": "14893",
+            "l_p": 15.0,
+            "b_n": "El español leo",
+            "b_id": "18083",
+            "b_p": 30.0
+        },
+        {
+            "l_n": "Leorelis",
+            "l_id": "27633",
+            "l_p": 15.0,
+            "b_n": "Nani",
+            "b_id": "18223",
+            "b_p": 30.0
+        },
+        {
+            "l_n": "El español leo",
+            "l_id": "43887",
+            "l_p": 18.0,
+            "b_n": "Rossana",
+            "b_id": "62238",
+            "b_p": 36.0
+        }
+    ]
+}

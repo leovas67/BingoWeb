@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Pro - BWD</title>
+    <style>
+        body { background-color: #0d1117; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .header { background: linear-gradient(145deg, #1f2937, #111827); padding: 20px; border-radius: 15px; border-bottom: 4px solid #e11d48; margin-bottom: 20px; }
+        h1 { color: #e11d48; margin: 0; font-size: 2.5em; text-transform: uppercase; letter-spacing: 5px; }
+        .stats-bar { display: flex; justify-content: space-around; background: #1f2937; padding: 10px; border-radius: 10px; margin: 15px 0; font-weight: bold; }
+        .card { background: #161b22; border: 2px solid #30363d; border-radius: 12px; padding: 20px; display: inline-block; margin-top: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(5, 60px); gap: 10px; margin-top: 15px; }
+        .cell { width: 60px; height: 60px; background: #21262d; border: 1px solid #30363d; display: flex; align-items: center; justify-content: center; font-size: 1.5em; cursor: pointer; border-radius: 8px; transition: 0.3s; }
+        .cell:hover { border-color: #e11d48; }
+        .cell.marked { background: #e11d48; color: white; transform: scale(0.9); box-shadow: 0 0 15px #e11d48; }
+        .btn { background: #e11d48; color: white; border: none; padding: 15px 30px; font-size: 1.2em; border-radius: 8px; cursor: pointer; margin: 10px; transition: 0.3s; }
+        .btn:hover { background: #f43f5e; transform: translateY(-2px); }
+        .btn-admin { background: #fbbf24; color: #000; }
+        .admin-panel { background: #2d3748; padding: 20px; border-radius: 10px; margin-top: 30px; border: 2px dashed #fbbf24; }
+        #last-number { font-size: 4em; color: #fbbf24; margin: 20px 0; text-shadow: 0 0 20px rgba(251, 191, 36, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>BINGO BWD</h1>
+        <div class="stats-bar">
+            <span>JUGADOR: <span id="user-name">{{ user }}</span></span>
+            <span>SALDO: <span id="saldo-val">{{ saldo }}</span> BWD</span>
+            <span>GANADAS: {{ ganadas }}</span>
+        </div>
+    </div>
+
+    <div id="last-number">--</div>
+
+    <div class="card">
+        <h3>TU CARTÓN</h3>
+        <div class="grid" id="bingo-card">
+            </div>
+        <button class="btn" onclick="checkBingo()">¡CANTAR BINGO!</button>
+    </div>
+
+    {% if is_admin %}
+    <div class="admin-panel">
+        <h2 style="color: #fbbf24;">PANEL ADMINISTRADOR</h2>
+        <button class="btn btn-admin" onclick="drawNumber()">CANTAR NÚMERO</button>
+        <button class="btn" style="background: #4a5568;" onclick="resetGame()">REINICIAR MESA</button>
+        <div id="draw-history" style="margin-top: 10px; font-size: 0.9em; opacity: 0.7;"></div>
+    </div>
+    {% endif %}
+
+    <script>
+        let myNumbers = [];
+        let drawnNumbers = {{ numeros | tojson }};
+
+        // Generar cartón aleatorio
+        function generateCard() {
+            const cardElement = document.getElementById('bingo-card');
+            for (let i = 0; i < 25; i++) {
+                let num = Math.floor(Math.random() * 75) + 1;
+                while(myNumbers.includes(num)) num = Math.floor(Math.random() * 75) + 1;
+                myNumbers.push(num);
+                
+                let cell = document.createElement('div');
+                cell.className = 'cell';
+                cell.innerText = num;
+                cell.onclick = function() { this.classList.toggle('marked'); };
+                cardElement.appendChild(cell);
+            }
+        }
+
+        async function drawNumber() {
+            const res = await fetch('/cantar');
+            const data = await res.json();
+            if (data.nuevo) {
+                document.getElementById('last-number').innerText = data.nuevo;
+                location.reload(); // Recargamos para que todos vean el número
+            }
+        }
+
+        async function resetGame() {
+            if(confirm("¿Reiniciar todos los números salidos?")) {
+                await fetch('/reiniciar');
+                location.reload();
+            }
+        }
+
+        async function checkBingo() {
+            const user = document.getElementById('user-name').innerText;
+            // Aquí iría la lógica de validación real, por ahora premiamos:
+            const res = await fetch('/ganar', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({user: user})
+            });
+            const data = await res.json();
+            if (data.status === 'ok') {
+                alert("¡FELICIDADES! Has ganado 50 BWD");
+                document.getElementById('saldo-val').innerText = data.nuevo_saldo;
+            }
+        }
+
+        generateCard();
+    </script>
+</body>
+</html>
